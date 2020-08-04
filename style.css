@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    overflow: hidden;
+    background-color: white;
+}
+.to {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: minmax(100px,auto);
+}
+ 
+.form {
+    border: 1px solid #80808000;
+    grid-column: 6/9;
+    grid-row: 3;
+    min-height: 100px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 14px 0px grey;
+    background-color: pink;
+}
+i.fab.fa-app-store-ios {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+ 
+label {
+    margin-left: -180px;
+    display: block;
+    font-weight: normal;
+ 
+}
+input{
+    display: block;
+    border-bottom: 2px solid #00BCC5;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    outline-style: none;
+}
+input[type="text"] {
+    padding: 5px;
+    width: 70%;
+}
+ 
+input#submit {
+    width: 50%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+    bottom: 40px;
+    cursor: pointer;
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+}
+input#submit:hover{
+ 
+    background: linear-gradient(to right, #fc466b, #3f5efb); 
+}
+.form-group{
+    display: flex;  
+    align-items: center;
+    width: 100%;
+
+
+}
+.title{
+    display: flex;
+    align-items: center;
+    
+}
+.check-box{
+    display: flex;
+    width: 30%;
+    margin-right: 10px;
+}
+.check-box input{
+    margin-right: 10px;
+}
+.form-control{
+    padding: 0px 12px;
+    outline: none;
+
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.birth_day{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row; 
+    width: 260px;
+  
+}
+.birth_day input{
+    text-align: center;
+    font-size: 13px;
+   
+}
+.birth_day :nth-child(1){
+    width: 20%;
+    margin-right: 20px;
+}
+.birth_day :nth-child(2){
+    width: 30%;
+    margin-right: 20px;
+}
+.birth_day :nth-child(3){
+  width :50%;
+}
